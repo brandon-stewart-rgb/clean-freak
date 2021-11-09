@@ -21,7 +21,7 @@ export default function WorkingSection() {
                     <StatusCard
                         color="lightBlue"
                         icon="autorenew"
-                        title="Free Revisions"
+                        title="Free Account"
                     >
                         Keep you user engaged by providing meaningful
                         information. Remember that by this time, the user is

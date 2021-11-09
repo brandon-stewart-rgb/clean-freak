@@ -22,7 +22,7 @@ export default function DefaultNavbar() {
                 <NavbarWrapper>
                     <a
                         href="/"
-                        target="_blank"
+                        target="_self"
                         rel="noreferrer"
                     >
                         <NavbarBrand>CLEAN FREAK</NavbarBrand>
