@@ -1,7 +1,10 @@
 {
-  "name": "material-tailwind-kit-react",
+  "name": "clean-freak",
   "version": "1.1.0",
   "private": true,
+  "engines": {
+    "node": "14.17.4"
+  }
   "proxy": "http://localhost:3000/",
   "homepage": "https://demos.creative-tim.com/material-tailwind-kit-react/#/",
   "dependencies": {
