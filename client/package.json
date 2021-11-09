@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": "14.17.4"
-  }
+  },
   "proxy": "http://localhost:3000/",
   "homepage": "https://demos.creative-tim.com/material-tailwind-kit-react/#/",
   "dependencies": {
