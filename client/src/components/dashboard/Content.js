@@ -27,19 +27,11 @@ export default function Content() {
 
                             <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:self-center flex justify-center mt-10lg:justify-end lg:mt-0">
                                 <Button color="lightBlue" ripple="light" className=' mr-5'>
-                                <Icon family="font-awesome" name="fab fa-plus" size="xl" /> 
-                                  Bronze
-                                </Button>
-                                <Button color="lightBlue" ripple="light" className=' mr-5'>
-                                <Icon family="font-awesome" name="fab fa-plus" size="xl" /> 
-                                  Silver
-                                </Button>
-                                <Button color="lightBlue" ripple="light" className=' mr-5'>
-                                <Icon family="font-awesome" name="fab fa-plus" size="xl" /> 
-                                  Gold
+                                <i class="fas fa-user "size="xl"></i>
+                                Edit your profile 
                                 </Button>
                             </div>
-                           
+                        
 
                             <div className="w-full lg:w-4/12 px-4 lg:order-1">
                                 <div className="flex justify-center py-4 lg:pt-4 pt-8">
@@ -91,23 +83,21 @@ export default function Content() {
                             <div className="flex flex-wrap justify-center">
                                 <div className="w-full lg:w-9/12 px-4 flex flex-col items-center">
                                     <LeadText color="blueGray">
-                                       My house is about 1200sf and is a duplex. 
+                                        My house is about 1200sf and is a duplex. 
                                     </LeadText>
-                                    <a
-                                        href="#pablo"
-                                        onClick={(e) => e.preventDefault()}
-                                    >
-                                        <Button
-                                            color="lightBlue"
-                                            buttonType="link"
-                                            ripple="dark"
-                                        >
-                                            Show more
-                                        </Button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
+
+ <div className="mb-10 py-2 border-t border-gray-200 text-center">
+                            <div className="flex flex-wrap justify-center">
+                                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center">
+                                    <H3 color="gray">Choose your cleaning plan.</H3>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>

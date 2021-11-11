@@ -24,7 +24,8 @@ export default function WorkingSection() {
                         icon="autorenew"
                         title="Silver"
                     >
-                        Bi-Weekly cleanings! 
+                        Bi-Weekly cleanings! This is great for...
+                        <h1 className = 'price'> $60/month </h1>
                     </StatusCard>
                     <StatusCard
                         color="yellow"
@@ -32,6 +33,8 @@ export default function WorkingSection() {
                         title="Gold"
                     >
                         The gold package is great for AirBNB's and offices, receive a special rate for daily cleanings.
+
+                        <h1 className='price'>$90/month</h1>
                     </StatusCard>
                 </div>
 
