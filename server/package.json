@@ -21,6 +21,8 @@
     "stripe": "^8.67.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^8.5.5",
     "nodemon": "^2.0.2"
   }
 }
