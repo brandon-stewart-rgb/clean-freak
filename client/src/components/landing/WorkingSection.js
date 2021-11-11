@@ -16,6 +16,8 @@ export default function WorkingSection() {
                 <div className="flex flex-wrap relative z-50">
                     <StatusCard color="brown" icon="stars" title="Bronze">
                         This is our most basic package. Bi-monthly cleanings. 
+
+                        <h1 className='price'>$30/month</h1>
                     </StatusCard>
                     <StatusCard
                         color="gray"
