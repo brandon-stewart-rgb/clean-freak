@@ -13,7 +13,7 @@ export default function Dashboard() {
             <main>
                 <Header />
                 <Content />
-                <PriceTiers />
+                
             </main>
             <DefaultFooter />
         </>
