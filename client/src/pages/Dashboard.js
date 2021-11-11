@@ -2,6 +2,7 @@ import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/dashboard/Header';
 import Content from 'components/dashboard/Content';
+import PriceTiers from 'components/dashboard/PriceTiers';
 
 export default function Dashboard() {
     return (
@@ -12,6 +13,7 @@ export default function Dashboard() {
             <main>
                 <Header />
                 <Content />
+                <PriceTiers />
             </main>
             <DefaultFooter />
         </>
