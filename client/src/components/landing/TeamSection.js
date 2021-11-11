@@ -9,7 +9,7 @@ export default function TeamSection() {
     return (
         <section className="pt-20 pb-48">
             <div className="container max-w-7xl mx-auto px-4">
-                <Title heading="Here are our heroes">
+                <Title heading="We pair you with great local companies and idividuals to fit your needs">
                     According to the National Oceanic and Atmospheric
                     Administration, Ted, Scambos, NSIDClead scentist, puts the
                     potentially record maximum.
@@ -18,22 +18,22 @@ export default function TeamSection() {
                     <TeamCard
                         img={Image1}
                         name="Ryan Tompson"
-                        position="Web Developer"
+                        position="Hi, I am Ryan. I love organizing and giving people a great experience!"
                     />
                     <TeamCard
                         img={Image2}
                         name="Romina Hadid"
-                        position="Marketing Specialist"
+                        position="I offer a flexible schedule!"
                     />
                     <TeamCard
                         img={Image3}
                         name="Alexa Smith"
-                        position="UI/UX Designer"
+                        position="Working with Clean Freak has given me the opportunity to make money on the side. It's easy to sign up and start working!"
                     />
                     <TeamCard
                         img={Image4}
                         name="Jenna Kardi"
-                        position="Founder and CEO"
+                        position="I joined Clean Freak because I wanted to give people more time to do more of what they love. I can offer that. I am fast and efficient. It's important to me to give you a clean space."
                     />
                 </div>
             </div>

@@ -11,11 +11,11 @@ module.exports = {
         extend: {
             backgroundImage: () => ({
                 'login-background':
-                    "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1280.jpg')",
+                    "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg')",
                 'landing-background':
-                    'linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80)',
+                    'linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true)',
                 'profile-background':
-                    "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1080.jpg')",
+                    "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/131img.jpeg')",
             }),
         },
     },

@@ -11,6 +11,7 @@ import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
 
+
 export default function Login() {
     return (
         <Page>
