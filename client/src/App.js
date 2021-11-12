@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 
 // import { Switch, Route, Redirect } from 'react-router-dom';
 import Landing from 'pages/Landing';
-import Profile from 'pages/Profile';
+// import Profile from 'pages/Profile';
 import Login from 'pages/Login';
 import Register from 'pages/Register';
 import Dashboard from 'pages/Dashboard';
@@ -47,7 +47,7 @@ function App() {
         <Router>
         <Switch>
             <Route exact path="/" component={Landing} />
-            <Route exact path="/profile" component={Profile} />
+            {/* <Route exact path="/profile" component={Profile} /> */}
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/dashboard" component={Dashboard} />

@@ -62,7 +62,7 @@ export default function DefaultNavbar() {
 								register
 								</Link>
 							</NavLink>
-							<NavLink>
+							{/* <NavLink>
 								<Link
 									to="/profile"
 									target="_self"
@@ -71,7 +71,7 @@ export default function DefaultNavbar() {
 								>
 								profile
 								</Link>
-							</NavLink>
+							</NavLink> */}
 							<NavLink>
 								<Link
 									to="/dashboard"
