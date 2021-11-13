@@ -14,3 +14,13 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 //     [3, { priceInCents: 15000, name: "Cleaning package 3" }],
 //     [4, { priceInCents: 20000, name: "Cleaning package 4" }],
 // ])
+
+// app.post("/create-checkout-session"), async (req, res) => {
+//     const session = await stripe.checkout.sessions.create({
+//         payment_method_types: ['card'],
+//         mode: 'payment',
+//         success_url: `${process.env.SERVER_URL}/success.html`,  //change these to our checkout pages
+//         cancel_url: `${process.env.SERVER_URL}/cancel.html`,  //change these to our checkout pages
+//     })
+//     res.json({ url: session.url })
+// }
