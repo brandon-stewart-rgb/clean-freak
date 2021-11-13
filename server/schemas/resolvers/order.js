@@ -7,9 +7,7 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 //app.use(express.static("public"))
 //require("dotenv").config()
 
-
-const resolvers = {
-  
-}
-
-module.exports = resolvers;
+//what we want to sell
+// const storeItems = new Map([
+//     [1, { priceInCents: 5000, name: "Cleaning package 1" }],
+//     [2, { priceInCents: 10000, name: "Cleaning package 2" }],
