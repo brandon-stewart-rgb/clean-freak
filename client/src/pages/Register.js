@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
@@ -11,11 +15,39 @@ import Page from 'components/login/Page';
 import Container from 'components/login/Container';
 
 export default function Register() {
+    const [formState, setFormState] = useState({ username: '', email: '', password: '' });
+    const [addUser, { error }] = useMutation(ADD_USER);
+
+    // update state based on form input changes
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
+    };
+
+    // submit form
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+
+        try {
+            const { data } = await addUser({
+                variables: { ...formState }
+            })
+            Auth.login(data.addUser.token);
+        }
+        catch (e) {
+            console.log(e);
+        }
+    };
     return (
         <Page>
             <DefaultNavbar />
             <Container>
                 <Card>
+                    <form onSubmit={handleFormSubmit}>
                     <CardHeader color="lightBlue">
                         <H5 color="white" style={{ marginBottom: 0 }}>
                             Register
@@ -26,25 +58,40 @@ export default function Register() {
                         <div className="mb-10 px-4">
                             <InputIcon
                                 type="text"
+                                className='form-input'
+                                id='username'
+                                name='username'
                                 color="lightBlue"
-                                placeholder="Full Name"
+                                placeholder="Your username"
                                 iconName="account_circle"
+                                value={formState.username}
+                                onChange={handleChange}
                             />
                         </div>
                         <div className="mb-10 px-4">
                             <InputIcon
-                                type="email"
                                 color="lightBlue"
-                                placeholder="Email Address"
                                 iconName="email"
+                                className='form-input'
+                                placeholder='Your email'
+                                name='email'
+                                type='email'
+                                id='email'
+                                value={formState.email}
+                                onChange={handleChange}
                             />
                         </div>
                         <div className="mb-4 px-4">
                             <InputIcon
-                                type="password"
                                 color="lightBlue"
-                                placeholder="Password"
                                 iconName="lock"
+                                className='form-input'
+                                placeholder='******'
+                                name='password'
+                                type='password'
+                                id='password'
+                                value={formState.password}
+                                onChange={handleChange}
                             />
                         </div>
                     </CardBody>
@@ -58,8 +105,10 @@ export default function Register() {
                             >
                                 Register
                             </Button>
+                            {error && <div>Sign up failed</div>}
                         </div>
                     </CardFooter>
+                    </form>
                 </Card>
             </Container>
             <SimpleFooter />
