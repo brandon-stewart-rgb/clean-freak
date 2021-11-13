@@ -36,3 +36,8 @@ const GET_TODOS = gql`
     }
   }
 `;
+
+function AddTodo() {
+    let input;
+    const [addTodo] = useMutation(ADD_TODO, {
+      update(cache, { data: { addTodo } }) {
