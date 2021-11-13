@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { Order } = require('../../models');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+//////ALL STRIPE DATA//////
 //const express = require("express")
 //const app = express()
 //app.use(express.json())
@@ -24,3 +25,14 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 //     })
 //     res.json({ url: session.url })
 // }
+//////ALL STRIPE DATA//////
+
+
+//////UPDATE MUTATION//////
+const GET_TODOS = gql`
+  query GetTodos {
+    todos {
+      id
+    }
+  }
+`;
