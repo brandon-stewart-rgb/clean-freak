@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Auth from '../utils/auth';
 import Navbar from '@material-tailwind/react/Navbar';
 import NavbarContainer from '@material-tailwind/react/NavbarContainer';
 import NavbarWrapper from '@material-tailwind/react/NavbarWrapper';
@@ -15,6 +16,10 @@ import Button from '@material-tailwind/react/Button';
 
 export default function DefaultNavbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
+	const logout = event => {
+		event.preventDefault();
+		Auth.logout();
+	}
 
 	return (
 		<Navbar color="transparent" navbar>
@@ -30,64 +35,55 @@ export default function DefaultNavbar() {
 				</NavbarWrapper>
 
 				<NavbarCollapse open={openNavbar}>
-					<Nav>
-						<div className="flex flex-col z-50 lg:flex-row lg:items-center">
-							<NavLink>
-								<Link
-									to="/"
-									target="_self"
-									rel="noreferrer"
-									ripple="light"
-								>
-									home
-								</Link>
-							</NavLink>
-							<NavLink>
-								<Link
-									to="/login"
-									target="_self"
-									rel="noreferrer"
-									ripple="light"
-								>
-								login
-								</Link>
-							</NavLink>
-							<NavLink>
-								<Link
-									to="/register"
-									target="_self"
-									rel="noreferrer"
-									ripple="light"
-								>
-								register
-								</Link>
-							</NavLink>
-							{/* <NavLink>
-								<Link
-									to="/profile"
-									target="_self"
-									rel="noreferrer"
-									ripple="light"
-								>
-								profile
-								</Link>
-							</NavLink> */}
-							<NavLink>
-								<Link
-									to="/dashboard"
-									target="_self"
-									rel="noreferrer"
-									ripple="light"
-								>
-								dashboard
-								</Link>
-							</NavLink>
-
-
-
-						
-
-							{/* <div className="text-white">
+					<div className="flex flex-col z-50 lg:flex-row lg:items-center">
+						<Nav>
+							{/* comment this auth out to see all navbar and be able to work on other pages */}
+							{Auth.loggedIn() ? (
+									<>
+									<NavLink>
+										<Link
+											to="/login"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											login
+										</Link>
+									</NavLink>
+									<NavLink>
+										<Link
+											to="/register"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											register
+										</Link>
+									</NavLink>
+								</>
+									) :
+									<>
+									<NavLink>
+										<Link
+											to="/profile"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											profile
+										</Link>
+									</NavLink>
+									<NavLink>
+										<Link
+											to="/dashboard"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											dashboard
+										</Link>
+									</NavLink>
+									{/* <div className="text-white">
 								<Dropdown
 									color="transparent"
 									size="sm"
@@ -114,31 +110,33 @@ export default function DefaultNavbar() {
 									</Link>
 								</Dropdown>
 							</div> */}
-							<NavLink
-								href="https://github.com/brandon-stewart-rgb/clean-freak"
-								target="_blank"
-								rel="noreferrer"
-								ripple="light"
-							>
-								<Icon family="font-awesome" name="fab fa-github" size="xl" />
-								&nbsp;Github
-							</NavLink>
-							
-							<a
-								href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<Button
-									color="transparent"
-									className="bg-white text-black ml-4"
-									ripple="dark"
-								>
-									Free Download
-								</Button>
-							</a>
-						</div>
-					</Nav>
+									<NavLink
+										href="https://github.com/brandon-stewart-rgb/clean-freak"
+										target="_blank"
+										rel="noreferrer"
+										ripple="light"
+									>
+										<Icon family="font-awesome" name="fab fa-github" size="xl" />
+										&nbsp;Github
+									</NavLink>
+
+									<a
+										href="https://www.creative-tim.com/product/material-tailwind-kit-react"
+										target="_blank"
+										rel="noreferrer"
+									>
+										<Button
+											color="transparent"
+											className="bg-white text-black ml-4"
+											ripple="dark"
+										>
+											Free Download
+										</Button>
+									</a>
+									</>
+						}
+								</Nav>
+					</div>
 				</NavbarCollapse>
 			</NavbarContainer>
 		</Navbar>

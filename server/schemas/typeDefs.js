@@ -1,29 +1,27 @@
 const { gql } = require('apollo-server');
 module.exports = gql`
-type Post {
+type Order {
   id: ID!
   body: String!
   createdAt: String!
-  username: String!
+  username: String
 }
 type User {
   id: ID!
   email: String!
   token: String!
   createdAt: String!
-}
-input RegisterInput {
-  username: String!
-  password: String!
-  confirmPassword: String!
-  email: String!
+  orders: [Order]
 }
 type Query {
-  getPosts: [Post]
+  me: User
+  users: [User]
+  user(username: String!): User
+  orders(username: String): [Order]
 }
 type Mutation {
-  register(registerInput: RegisterInput): User!
-  login(username: String!, password: String!): User!
+  login(email: String!, password: String!): Auth
+  addUser(username: String!, email: String!, password: String!): Auth
 }
 `
-module.exports = typeDefs;
+
