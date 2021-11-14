@@ -42,29 +42,6 @@ export default function DefaultNavbar() {
 									<>
 									<NavLink>
 										<Link
-											to="/login"
-											target="_self"
-											rel="noreferrer"
-											ripple="light"
-										>
-											login
-										</Link>
-									</NavLink>
-									<NavLink>
-										<Link
-											to="/register"
-											target="_self"
-											rel="noreferrer"
-											ripple="light"
-										>
-											register
-										</Link>
-									</NavLink>
-								</>
-									) :
-									<>
-									<NavLink>
-										<Link
 											to="/profile"
 											target="_self"
 											rel="noreferrer"
@@ -134,6 +111,30 @@ export default function DefaultNavbar() {
 										</Button>
 									</a>
 									</>
+									
+									) :
+									<>
+									<NavLink>
+										<Link
+											to="/login"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											login
+										</Link>
+									</NavLink>
+									<NavLink>
+										<Link
+											to="/register"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											register
+										</Link>
+									</NavLink>
+								</>
 						}
 								</Nav>
 					</div>
