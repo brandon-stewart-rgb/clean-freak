@@ -9,10 +9,10 @@ import NavbarToggler from '@material-tailwind/react/NavbarToggler';
 import NavbarCollapse from '@material-tailwind/react/NavbarCollapse';
 import Nav from '@material-tailwind/react/Nav';
 import NavLink from '@material-tailwind/react/NavLink';
-import Dropdown from '@material-tailwind/react/Dropdown';
-import DropdownItem from '@material-tailwind/react/DropdownItem';
-import Icon from '@material-tailwind/react/Icon';
-import Button from '@material-tailwind/react/Button';
+// import Dropdown from '@material-tailwind/react/Dropdown';
+// import DropdownItem from '@material-tailwind/react/DropdownItem';
+// import Icon from '@material-tailwind/react/Icon';
+// import Button from '@material-tailwind/react/Button';
 
 export default function DefaultNavbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
@@ -38,7 +38,7 @@ export default function DefaultNavbar() {
 					<div className="flex flex-col z-50 lg:flex-row lg:items-center">
 						<Nav>
 							{/* comment this auth out to see all navbar and be able to work on other pages */}
-							{Auth.loggedIn() ? (
+							{/* {Auth.loggedIn() ? ( */}
 									<>
 									<NavLink>
 										<Link
@@ -61,16 +61,16 @@ export default function DefaultNavbar() {
 										</Link>
 									</NavLink>
 								</>
-									) :
+									{/* ) : */}
 									<>
 									<NavLink>
 										<Link
-											to="/profile"
+											to="/services"
 											target="_self"
 											rel="noreferrer"
 											ripple="light"
 										>
-											profile
+											services
 										</Link>
 									</NavLink>
 									<NavLink>
@@ -110,7 +110,7 @@ export default function DefaultNavbar() {
 									</Link>
 								</Dropdown>
 							</div> */}
-									<NavLink
+									{/* <NavLink
 										href="https://github.com/brandon-stewart-rgb/clean-freak"
 										target="_blank"
 										rel="noreferrer"
@@ -132,9 +132,9 @@ export default function DefaultNavbar() {
 										>
 											Free Download
 										</Button>
-									</a>
+									</a> */}
 									</>
-						}
+						{/* } */}
 								</Nav>
 					</div>
 				</NavbarCollapse>

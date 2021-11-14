@@ -1,10 +1,10 @@
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
-import Header from 'components/dashboard/Header';
-import Content from 'components/dashboard/Content';
+import Header from 'components/services/Header';
+import Content from 'components/services/Content';
 
 
-export default function Dashboard() {
+export default function Services() {
     return (
         <>
             <div className="absolute w-full z-20">
