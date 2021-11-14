@@ -2,8 +2,10 @@ import Button from '@material-tailwind/react/Button';
 import Image from '@material-tailwind/react/Image';
 import H3 from '@material-tailwind/react/Heading3';
 import Icon from '@material-tailwind/react/Icon';
-import LeadText from '@material-tailwind/react/LeadText';
+
 import ProfilePicture from 'assets/img/team-2-800x800.jpg';
+
+import History from '../dashboard/History'
 
 export default function Content() {
     return (
@@ -28,7 +30,7 @@ export default function Content() {
                             <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:self-center flex justify-center mt-10lg:justify-end lg:mt-0">
                                 <Button color="lightBlue" ripple="light" className=' mr-5'>
                                 <i class="fas fa-user "size="xl"></i>
-                                Edit your profile 
+                                You have (x) items in cart
                                 </Button>
                             </div>
                         
@@ -37,66 +39,52 @@ export default function Content() {
                                 <div className="flex justify-center py-4 lg:pt-4 pt-8">
                                     <div className="mr-4 p-3 text-center">
                                         <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            22
+                                            Welcome: Jane Doe User
                                         </span>
-                                        <span className="text-sm text-gray-700">
-                                            Friends
+                                        <span className="text-sm font-light block uppercase tracking-wide text-gray-900">
+                                   
+                              4 star customer
                                         </span>
+                                      
                                     </div>
-                                    <div className="mr-4 p-3 text-center">
-                                        <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            10
-                                        </span>
-                                        <span className="text-sm text-gray-700">
-                                            Photos
-                                        </span>
-                                    </div>
-                                    <div className="lg:mr-4 p-3 text-center">
-                                        <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            89
-                                        </span>
-                                        <span className="text-sm text-gray-700">
-                                            Comments
-                                        </span>
-                                    </div>
+                                 
+                                  
+     
                                 </div>
                             </div>
                         </div>
+
+
+                     
+
+
+
+                           
+                    
+
+
 
                         <div className="text-center my-8">
-                            <H3 color="gray">Welcome: Jane Doe User</H3>
+                            <H3 color="gray">Jane Doe User</H3>
                             <div className="mt-0 mb-2 text-gray-700 font-medium flex items-center justify-center gap-2">
                                 <Icon name="place" size="xl" />
-                                Nephi, Utah
+                              Your Location <strong></strong>  Nephi, Utah
                             </div>
-                            <div className="mb-2 text-gray-700 mt-10 flex items-center justify-center gap-2">
-                                <Icon name="work" size="xl" />
-                              4 star customer
-                            </div>
+                           
                             <div className="mb-2 text-gray-700 flex items-center justify-center gap-2">
                                 <Icon name="account_balance" size="xl" />
-                                $30.00
+                               Services paid to date:  <strong>$30.00</strong>
                             </div>
                         </div>
 
-                        <div className="mb-10 py-2 border-t border-gray-200 text-center">
-                            <div className="flex flex-wrap justify-center">
-                                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center">
-                                    <LeadText color="blueGray">
-                                        My house is about 1200sf and is a duplex. 
-                                    </LeadText>
-                                </div>
-                            </div>
-                        </div>
 
- <div className="mb-10 py-2 border-t border-gray-200 text-center">
-                            <div className="flex flex-wrap justify-center">
-                                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center">
-                                    <H3 color="gray">Choose your cleaning plan.</H3>
-                                </div>
-                            </div>
-                        </div>
 
+                        <History />
+
+                      
+
+
+                       
                         
                     </div>
                 </div>
