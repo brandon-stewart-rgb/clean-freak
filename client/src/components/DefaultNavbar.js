@@ -42,7 +42,7 @@ export default function DefaultNavbar() {
 									<>
 									<NavLink>
 										<Link
-											to="/profile"
+											to="/services"
 											target="_self"
 											rel="noreferrer"
 											ripple="light"
