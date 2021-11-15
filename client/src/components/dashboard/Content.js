@@ -3,7 +3,7 @@ import Image from '@material-tailwind/react/Image';
 import H3 from '@material-tailwind/react/Heading3';
 import Icon from '@material-tailwind/react/Icon';
 
-import ProfilePicture from 'assets/img/team-2-800x800.jpg';
+import ProfilePicture from 'assets/img/926.jpeg';
 
 import History from '../dashboard/History'
 
