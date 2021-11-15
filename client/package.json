@@ -5,7 +5,7 @@
   "engines": {
     "node": "14.17.4"
   },
-  "proxy": "http://localhost:3000/",
+  "proxy": "http://localhost:3001/",
   "homepage": "https://demos.creative-tim.com/material-tailwind-kit-react/#/",
   "dependencies": {
     "@apollo/client": "^3.3.7",
