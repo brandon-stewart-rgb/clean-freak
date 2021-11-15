@@ -1,13 +1,13 @@
 const { Schema } = require('mongoose');
 
-const productSchema = require('./Product')
+// const productSchema = require('./Product')
 
 const orderSchema = new Schema({
   purchaseDate: {
     type: Date,
     default: Date.now
   },
-  products: [productSchema]
+  // products: [productSchema]
 });
 
 

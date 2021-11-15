@@ -1087,6 +1087,12 @@ html{
 	--tab-border: 1px;
 	--tab-radius: 0;
 }
+[data-theme=lofi] *:where(.btn){
+	border-color: var(--border-color) !important;
+	--tw-border-opacity: 1 !important;
+	--tw-text-opacity: 1 !important;
+	--tw-shadow: 0 0 0 1px var(--border-color) !important;
+}
 [data-theme=lofi] *:where(.card){
 	border-color: var(--border-color) !important;
 	--tw-border-opacity: 1 !important;
@@ -1371,6 +1377,73 @@ html{
 	align-items: center;
 	justify-content: center;
 }
+.btn{
+	border-color: transparent;
+	border-color: hsla(var(--n)/var(--tw-border-opacity,1));
+	cursor: pointer;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	text-align: center;
+	-webkit-user-select: none;
+	user-select: none;
+	transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+	transition-duration: .15s;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	border-radius: var(--rounded-btn,.5rem);
+	height: 3rem;
+	font-size: .875rem;
+	line-height: 1.25rem;
+	line-height: 1em;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	min-height: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-transform: var(--btn-text-case,uppercase);
+	border-width: var(--border-btn,1px);
+	animation: button-pop var(--animation-btn,.25s) ease-out;
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--n)/var(--tw-bg-opacity,1));
+	--tw-border-opacity: 1;
+	--tw-text-opacity: 1;
+	color: hsla(var(--nc)/var(--tw-text-opacity,1));
+}
+.btn:focus{
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+}
+.btn-disabled,.btn[disabled]{
+	pointer-events: none;
+	--tw-bg-opacity: 1;
+	--tw-bg-opacity: 0.2;
+	background-color: hsla(var(--n)/var(--tw-bg-opacity,1));
+	--tw-border-opacity: 0;
+	--tw-text-opacity: 1;
+	--tw-text-opacity: 0.2;
+	color: hsla(var(--bc)/var(--tw-text-opacity,1));
+}
+.btn.loading,.btn.loading:hover{
+	pointer-events: none;
+}
+.btn.loading:before{
+	border-radius: 9999px;
+	border-width: 2px;
+	height: 1rem;
+	margin-right: .5rem;
+	width: 1rem;
+	animation: spin 2s linear infinite;
+	content: "";
+	border-color: transparent currentColor currentColor transparent;
+}
+@media (prefers-reduced-motion:reduce){
+	.btn.loading:before{
+		animation: spin 10s linear infinite;
+	}
+}
 @keyframes spin{
 	0%{
 		transform: rotate(0deg);
@@ -1378,6 +1451,13 @@ html{
 	to{
 		transform: rotate(1turn);
 	}
+}
+.btn-group>input[type=radio].btn{
+	-webkit-appearance: none;
+	appearance: none;
+}
+.btn-group>input[type=radio].btn:before{
+	content: attr(data-title);
 }
 .card{
 	display: flex;
@@ -1603,6 +1683,71 @@ html{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
+}
+.btn .badge{
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--b1)/var(--tw-bg-opacity,1));
+	border-color: transparent;
+	--tw-text-opacity: 1;
+	color: hsla(var(--bc)/var(--tw-text-opacity,1));
+}
+.btn .badge-outline{
+	background-color: transparent;
+	--tw-border-opacity: 1;
+	border-color: hsla(var(--b2)/var(--tw-border-opacity,1));
+	--tw-text-opacity: 1;
+	color: hsla(var(--b2)/var(--tw-text-opacity,1));
+}
+.btn:active:focus,.btn:active:hover{
+	animation: none;
+	transform: scale(var(--btn-focus-scale,.95));
+}
+.btn-active,.btn:hover{
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--nf)/var(--tw-bg-opacity,1));
+	--tw-border-opacity: 1;
+	border-color: hsla(var(--nf)/var(--tw-border-opacity,1));
+}
+.btn:focus-visible{
+	box-shadow: 0 0 0 2px hsl(var(--b1)),0 0 0 4px hsl(var(--nf));
+}
+.btn.glass.btn-active,.btn.glass:hover{
+	--glass-opacity: 25%;
+	--glass-border-opacity: 15%;
+}
+.btn.glass:focus-visible{
+	box-shadow: 0 0 0 2px currentColor;
+}
+.btn.loading.btn-circle:before,.btn.loading.btn-square:before{
+	margin-right: 0;
+}
+.btn.loading.btn-lg:before,.btn.loading.btn-xl:before{
+	height: 1.25rem;
+	width: 1.25rem;
+}
+.btn.loading.btn-sm:before,.btn.loading.btn-xs:before{
+	height: .75rem;
+	width: .75rem;
+}
+.btn-group>.btn-active,.btn-group>input[type=radio]:checked.btn{
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--p)/var(--tw-bg-opacity,1));
+	--tw-border-opacity: 1;
+	border-color: hsla(var(--p)/var(--tw-border-opacity,1));
+	--tw-text-opacity: 1;
+	color: hsla(var(--pc)/var(--tw-text-opacity,1));
+}
+.btn-group>.btn-active:focus-visible,.btn-group>input[type=radio]:checked.btn:focus-visible{
+	box-shadow: 0 0 0 2px hsl(var(--b1)),0 0 0 4px hsl(var(--p));
+}
+.btn-group>.btn:not(:first-child){
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -1px;
+}
+.btn-group>.btn:not(:last-child){
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 @keyframes button-pop{
 	0%{
@@ -2192,10 +2337,10 @@ html{
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 .bg-profile-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.10)), url('/src/assets/img/0010.jpeg');
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/131img.jpeg');
 }
 .bg-landing-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.30)), url('/src/assets/img/130img.jpeg');
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true);
 }
 .bg-login-background{
 	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg');
