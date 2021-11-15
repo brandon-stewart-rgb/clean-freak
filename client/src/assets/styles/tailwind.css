@@ -2343,7 +2343,7 @@ html{
 	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true);
 }
 .bg-login-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg');
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.25)), url('/src/assets/img/108img.jpeg');
 }
 .bg-cover{
 	background-size: cover;
