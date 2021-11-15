@@ -14,7 +14,7 @@ import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
 
-export default function Register() {
+const Register = () => {
     const [formState, setFormState] = useState({ username: '', email: '', password: '' });
     const [addUser, { error }] = useMutation(ADD_USER);
 
@@ -31,13 +31,14 @@ export default function Register() {
     // submit form
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
+        console.log({...formState})
         try {
-            const { data } = await addUser({
-                variables: { ...formState }
+            const {data} = await addUser({
+                variables: { email: formState.email, username: formState.username, password: formState.password }
             })
+            console.log(data)
             Auth.login(data.addUser.token);
-        }
+        } 
         catch (e) {
             console.log(e);
         }
@@ -46,6 +47,39 @@ export default function Register() {
         <Page>
             <DefaultNavbar />
             <Container>
+            {/* <form onSubmit={handleFormSubmit}>
+              <input
+                className='form-input'
+                placeholder='Your email'
+                name='email'
+                type='email'
+                id='email'
+                value={formState.email}
+                onChange={handleChange}
+              />
+              <input
+                className='form-input'
+                placeholder='Your email'
+                name='username'
+                type='username'
+                id='username'
+                value={formState.username}
+                onChange={handleChange}
+              />
+              <input
+                className='form-input'
+                placeholder='******'
+                name='password'
+                type='password'
+                id='password'
+                value={formState.password}
+                onChange={handleChange}
+              />
+              <button className='btn d-block w-100' type='submit'>
+                Submit
+              </button>
+              {error && <div>Login failed</div>}
+            </form> */}
                 <Card>
                     <form onSubmit={handleFormSubmit}>
                     <CardHeader color="lightBlue">
@@ -97,21 +131,23 @@ export default function Register() {
                     </CardBody>
                     <CardFooter>
                         <div className="flex justify-center">
-                            <Button
+                            <button
+                                type='submit'
                                 color="lightBlue"
                                 buttonType="link"
                                 size="lg"
                                 ripple="dark"
                             >
                                 Register
-                            </Button>
+                            </button>
                             {error && <div>Sign up failed</div>}
                         </div>
                     </CardFooter>
-                    </form>
-                </Card>
+                    </form> 
+                 </Card>
             </Container>
             <SimpleFooter />
         </Page>
     );
 }
+export default Register;
