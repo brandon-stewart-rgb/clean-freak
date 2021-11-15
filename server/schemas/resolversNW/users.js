@@ -1,10 +1,21 @@
 const User = require('../../models/User');
 const {signToken} = require('../../utils/auth');
+const { AuthenticationError } = require('apollo-server-express')
 const {validateLoginInput} = require('../../utils/validators')
 
 
 
-module.exports = {
+const resolvers = {
+    Query: {
+        me: async(parent, args, context)=>{
+            if(context.user){
+                const userData =  await User.findOne({_id: context.user_id}).select('-__v-password');
+                return userData;
+            }
+
+            throw new AuthenticationError('You Are Not Logged In!')
+        }
+    },
     Mutation: {
         login: async (_, {username, password }) => {
             // check for errors in username and password
@@ -36,3 +47,5 @@ module.exports = {
         }
     }
 }
+
+module.exports = resolvers;

@@ -1,10 +1,21 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const bcrypt = require('bcrypt');
-const Category = require('./Category');
 
+const productSchema = new Schema({
 
+    color:{
+        type: String,
+        required: true
+    },
+    price:{
+        type: Number,
+        required: true
+    }, 
+    housekeeper:{
+        type: String,
+        required: true
+    }
+});
 
-
- //AFTER Choosing category they are able to choose the  "product" house keeper etc im wondering if i can change that or would it mess up my terminal like how seeds.js has to be named that due to npm run seeds right? idk 
+module.exports = productSchema;

@@ -16,5 +16,5 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 //     [4, { priceInCents: 20000, name: "Cleaning package 4" }],
 // ])
 
-module.exports = resolvers;
+//module.exports = resolvers;
 
