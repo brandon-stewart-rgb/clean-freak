@@ -37,9 +37,20 @@ export default function DefaultNavbar() {
 				<NavbarCollapse open={openNavbar}>
 					<div className="flex flex-col z-50 lg:flex-row lg:items-center">
 						<Nav>
+							<NavLink>
+										<Link
+											to="/"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											home
+										</Link>
+									</NavLink>
 							{/* comment this auth out to see all navbar and be able to work on other pages */}
 							{/* {Auth.loggedIn() ? ( */}
 									<>
+									
 									<NavLink>
 										<Link
 											to="/services"

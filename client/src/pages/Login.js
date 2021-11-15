@@ -11,7 +11,7 @@ import InputIcon from '@material-tailwind/react/InputIcon';
 import Checkbox from '@material-tailwind/react/Checkbox';
 import Button from '@material-tailwind/react/Button';
 import DefaultNavbar from 'components/DefaultNavbar';
-import SimpleFooter from 'components/SimpleFooter';
+// import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
 
@@ -114,7 +114,7 @@ const Login = (props) => {
                     </form>
                 </Card>
             </Container>
-            <SimpleFooter />
+            {/* <SimpleFooter /> */}
         </Page>
     );
 }
