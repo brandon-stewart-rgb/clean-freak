@@ -1,10 +1,10 @@
-const orderResolvers = require('./order');
+// const orderResolvers = require('./order');
 const usersResolvers = require('./users');
 
 module.exports = {
-    Query: {
-        ...orderResolvers.Query
-    },
+    // Query: {
+    //     ...orderResolvers.Query
+    // },
     Mutation:{
         ...usersResolvers.Mutation
     }

@@ -104,3 +104,25 @@ export default function PriceModals() {
 		</section>
 	);
 }
+
+
+//   // Bronze: {   WE NEED THIS INFO IN THE FRONT END SO IT CAN BE SAVED TO USER TO BE SAVED ON BUTTON PRESS
+    //     type: String,
+    //     required: true,
+    //     unique: false,
+    //     price: 49.99
+    // },
+    // Silver: {
+    //     type: String,
+    //     required: true,
+    //     unique: false,
+    //     price: 59.99
+    // },
+    // Gold: {
+    //     type: String,
+    //     required: true,
+    //     unique: true,
+    //     price: 69.99
+    // }
+
+	// drop down package if select gold list person and send to collect all the data of everything i want and model 
