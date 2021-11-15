@@ -9,17 +9,24 @@ type User {
 }
 
 type Order {
-  id: ID!
+  _id: ID!
   body: String!
   createdAt: String!
   username: String
 }
-
+type User {
+  _id: ID!
+  username: String!
+  password: String!
+  email: String!
+  token: String!
+  createdAt: String!
+  orders: [Order]
+}
 type Auth{
   token: ID!
-  user:User
+  user: User!
 }
-
 type Query {
   me: User
 
