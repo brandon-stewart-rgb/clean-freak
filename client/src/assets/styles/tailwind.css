@@ -2337,10 +2337,10 @@ html{
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 .bg-profile-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/131img.jpeg');
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/0010.jpeg');
 }
 .bg-landing-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true);
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/130img.jpeg');
 }
 .bg-login-background{
 	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg');
