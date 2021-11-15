@@ -1,9 +1,9 @@
 import Title from 'components/landing/Title';
 import TeamCard from 'components/landing/TeamCard';
-import Image1 from 'assets/img/478.png';
-import Image2 from 'assets/img/57.jpeg';
-import Image3 from 'assets/img/48.jpeg';
-import Image4 from 'assets/img/603.jpeg';
+import Image1 from 'assets/img/BBB.jpg';
+import Image2 from 'assets/img/BW.jpg';
+import Image3 from 'assets/img/WP.jpg';
+import Image4 from 'assets/img/GG.jpg';
 
 export default function TeamSection() {
     return (
