@@ -7,9 +7,6 @@ const orderSchema = new Schema({
     type: Date,
     default: Date.now
   },
-<<<<<<< Updated upstream
-  products: [productSchema]
-=======
   price: {
     type: Int
   },
@@ -18,7 +15,6 @@ const orderSchema = new Schema({
   },
   username: [User]
   // products: [productSchema]
->>>>>>> Stashed changes
 });
 
 
