@@ -26,7 +26,7 @@ export default function Content() {
                             </div>
                             <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:self-center flex justify-center mt-10 lg:justify-end lg:mt-0">
                                 <Button color="lightBlue" ripple="light">
-                                    Conntect
+                                    Connect
                                 </Button>
                             </div>
                             <div className="w-full lg:w-4/12 px-4 lg:order-1">

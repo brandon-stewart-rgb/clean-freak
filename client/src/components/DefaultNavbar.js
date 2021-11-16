@@ -60,6 +60,17 @@ export default function DefaultNavbar() {
 											dashboard
 										</Link>
 									</NavLink>
+									<NavLink>
+										<Link
+											to="/"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+											onClick={logout}
+										>
+											logout
+										</Link>
+									</NavLink>
 									{/* <div className="text-white">
 								<Dropdown
 									color="transparent"
