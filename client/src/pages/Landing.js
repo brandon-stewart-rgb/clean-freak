@@ -4,6 +4,7 @@ import Header from 'components/landing/Header';
 import WorkingSection from 'components/landing/WorkingSection';
 import TeamSection from 'components/landing/TeamSection';
 import ContactSection from 'components/landing/ContactSection';
+import "../assets/styles/image-styles.css";
 
 export default function Landing() {
     return (

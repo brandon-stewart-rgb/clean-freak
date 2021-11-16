@@ -1,0 +1,10 @@
+.bg-profile-background{
+    background-position: center bottom;
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.25)), url('/src/assets/img/0010.jpeg')!important;
+}
+.bg-landing-background{
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/130img.jpeg')!important;
+}
+.bg-login-background{
+	background-image: linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.25)), url('/src/assets/img/1.jpeg')!important;
+}

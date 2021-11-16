@@ -10,12 +10,12 @@ module.exports = {
         },
         extend: {
             backgroundImage: () => ({
-                'login-background':
-                    "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg')",
-                'landing-background':
-                    'linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true)',
-                'profile-background':
-                    "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/131img.jpeg')",
+                // 'login-background':
+                //     "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/110img.jpeg')",
+                // 'landing-background':
+                //     'linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url(https://github.com/SamanthaPeterson/for-react-portfolio/blob/main/Images%20for%20project%203/130img.jpeg?raw=true)',
+                // 'profile-background':
+                //     "linear-gradient(rgba(0,0,0, 0.50), rgba(0,0,0, 0.75)), url('/src/assets/img/131img.jpeg')",
             }),
         },
     },
