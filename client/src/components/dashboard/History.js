@@ -1,3 +1,5 @@
+import StatusCard from 'components/landing/StatusCard';
+
 export default function History() {
 	return (
 
@@ -9,9 +11,8 @@ export default function History() {
 				<h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">
 					Past Services
 				</h1>
-				<p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">
-				Lorem Ipsum Dolor
-				</p>
+			<p color="brown" icon="stars" ></p> 
+				
 				<p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">
 				Lorem Ipsum Dolor
 				</p>

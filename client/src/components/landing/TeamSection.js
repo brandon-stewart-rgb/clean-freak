@@ -10,9 +10,7 @@ export default function TeamSection() {
         <section className="pt-20 pb-48">
             <div className="container max-w-7xl mx-auto px-4">
                 <Title heading="We pair you with great local companies and idividuals to fit your needs">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record maximum.
+                Radiation suit, of course, cause all of the fall out from the atomic wars.  This is truly amazing, a portable television studio.
                 </Title>
                 <div className="flex flex-wrap">
                     <TeamCard
