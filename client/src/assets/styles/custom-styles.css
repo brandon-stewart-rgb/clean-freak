@@ -1,0 +1,18 @@
+.history li {
+    display: block;
+    background-color: rgb(216, 216, 216);
+    color: rgb(112, 112, 112);
+    border-radius: 6px;
+    padding: 2px 0;
+    margin: 15px 0;
+    border: solid 1px #fff;
+    letter-spacing: 1px;
+    transition: 0.4s;
+    filter: drop-shadow(5px 5px 3px #d6d6d6);
+}
+.history li:hover {
+    background-color: rgb(16, 151, 241);
+    color: #fff;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 3px  rgb(206, 223, 235));
+}

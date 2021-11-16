@@ -1,8 +1,9 @@
 import Card from '@material-tailwind/react/Card';
 import CardBody from '@material-tailwind/react/CardBody';
-import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 import Paragraph from '@material-tailwind/react/Paragraph';
+import Icon from '@material-tailwind/react/Icon';
+
 
 const colors = {
     blueGray: 'bg-blue-gray-500',
@@ -26,12 +27,16 @@ const colors = {
     red: 'bg-red-500',
 };
 
-export default function DashCard({  title, children }) {
+export default function History({ color, icon, title, children }) {
     return (
-		<div className="w-full md:w-4/12 px-4 flex justify-center text-center">
+        <div className="w-full md:w-8/12 px-4 flex justify-center text-center">
             <Card>
                 <CardBody>
-                   
+                <div
+                        className={`p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-md rounded-full ${colors[color]}`}
+                    >
+                        <Icon name={icon} size="xl" color="white" />
+                    </div>
                     <H6 color="gray">{title}</H6>
                     <Paragraph color="blueGray">{children}</Paragraph>
                 </CardBody>
