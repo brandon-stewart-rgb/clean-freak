@@ -1,6 +1,7 @@
 
 import StatusCard from 'components/landing/StatusCard';
-import DatePicker from 'components/services/DatePicker'
+import SingleCal from 'components/services/SingleCal'
+import MultipleCal from 'components/services/MultipleCal'
 import '../PriceModals.css'
 
 export default function PriceModals() {
@@ -22,7 +23,7 @@ export default function PriceModals() {
 						Hello: Username
                         </p>  
                                 
-    					<DatePicker />
+    					<MultipleCal />
                                 
 								<button
 									href="/"
@@ -53,7 +54,7 @@ export default function PriceModals() {
 						Hello: Username
                         </p>  
                                 
-    					<DatePicker />
+    					<MultipleCal />
                                 
 								<button
 									href="/"
@@ -72,19 +73,20 @@ export default function PriceModals() {
 
 					<StatusCard color="yellow" icon="fingerprint" title="Gold">
 						Daily Cleanings.
-						<h1 className="price">$90/month</h1>
+						<h1 className="price">$800/month</h1>
 						
 
 						<div className="collapse bg-gray-100 rounded-box border-base-300   collapse-arrow">
 					<input type="checkbox" />
 					<div className="collapse-title text-xl font-medium ">Get Started</div>
 							
-						<div className="collapse-content ">  
-						<p className="text-l font-medium" >	
-						Hello: Username
+						<div className="collapse-content "> 
+						  
+						<p className="text-l font-medium" >		
+						Select Start Dates
                         </p>  
                                 
-    					<DatePicker />
+    					<SingleCal />
                                 
 								<button
 									href="/"
