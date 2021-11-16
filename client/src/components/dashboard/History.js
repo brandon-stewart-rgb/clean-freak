@@ -1,4 +1,4 @@
-import StatusCard from 'components/landing/StatusCard';
+// import StatusCard from 'components/landing/StatusCard';
 
 export default function History() {
 	return (

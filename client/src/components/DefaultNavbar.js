@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Auth from '../utils/auth';
+// import Auth from '../utils/auth';
 import Navbar from '@material-tailwind/react/Navbar';
 import NavbarContainer from '@material-tailwind/react/NavbarContainer';
 import NavbarWrapper from '@material-tailwind/react/NavbarWrapper';
@@ -16,10 +16,10 @@ import NavLink from '@material-tailwind/react/NavLink';
 
 export default function DefaultNavbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
-	const logout = event => {
-		event.preventDefault();
-		Auth.logout();
-	}
+	// const logout = event => {
+	// 	event.preventDefault();
+	// 	Auth.logout();
+	// }
 
 	return (
 		<Navbar color="transparent" navbar>

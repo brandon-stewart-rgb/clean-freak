@@ -1,11 +1,11 @@
 import Button from '@material-tailwind/react/Button';
-import Image from '@material-tailwind/react/Image';
+// import Image from '@material-tailwind/react/Image';
 import StatusCard from 'components/landing/StatusCard';
-import H3 from '@material-tailwind/react/Heading3';
+// import H3 from '@material-tailwind/react/Heading3';
 import H4 from '@material-tailwind/react/Heading4';
-import Icon from '@material-tailwind/react/Icon';
+// import Icon from '@material-tailwind/react/Icon';
 import MultipleCal from 'components/services/MultipleCal'
-import ProfilePicture from 'assets/img/926.jpeg';
+// import ProfilePicture from 'assets/img/926.jpeg';
 
 import History from '../dashboard/History';
 
