@@ -17,28 +17,22 @@ const resolvers = {
         }
     },
     Mutation: {
-        login: async (_, {username, password }) => {
-            // check for errors in username and password
-            const {errors, valid} = validateLoginInput(username, password);
-            if(!valid){
-                throw new Error('err', {errors})
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
+          
+            if (!user) {
+              throw new AuthenticationError('Incorrect credentials');
             }
-            // find a user from the database
-            const user = User.findOne({username})
-
-            if(!user){
-                errors.general = 'User not found';
-                throw new Error('Wrong username', {errors});
+          
+            const correctPw = await user.isCorrectPassword(password);
+          
+            if (!correctPw) {
+              throw new AuthenticationError('Incorrect credentials');
             }
-            const match = await user.isCorrectPassword(password);
-            if(!match){
-                errors.general = 'Wrong password';
-                throw new Error('Wrong password', {errors});
-            }
+          
             const token = signToken(user);
-
-            return {token, user};
-        },
+            return { token, user };
+          },
         addUser: async (_, args) => {
             console.log(args);
             const user = await User.create(args);
