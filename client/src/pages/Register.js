@@ -8,11 +8,12 @@ import CardBody from '@material-tailwind/react/CardBody';
 import CardFooter from '@material-tailwind/react/CardFooter';
 import H5 from '@material-tailwind/react/Heading5';
 import InputIcon from '@material-tailwind/react/InputIcon';
-import Button from '@material-tailwind/react/Button';
+// import Button from '@material-tailwind/react/Button';
 import DefaultNavbar from 'components/DefaultNavbar';
 // import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
+import "../assets/styles/image-styles.css";
 
 const Register = () => {
     const [formState, setFormState] = useState({ username: '', email: '', password: '' });

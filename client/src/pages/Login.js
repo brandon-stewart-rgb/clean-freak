@@ -14,6 +14,7 @@ import DefaultNavbar from 'components/DefaultNavbar';
 // import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
+import "../assets/styles/image-styles.css";
 
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: '' });
