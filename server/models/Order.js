@@ -1,6 +1,8 @@
-const { Schema } = require('mongoose');
+const mongoose = require('mongoose');
 
-// const productSchema = require('./Product')
+const { Schema } = mongoose;
+const userSchema = require('./User');
+
 
 const orderSchema = new Schema({
   purchaseDate: {
@@ -13,10 +15,10 @@ const orderSchema = new Schema({
   name: {
     type: String
   },
-  username: [User]
+  username: [userSchema]
   // products: [productSchema]
 });
 
-
-
-module.exports = orderSchema;
+const Order = mongoose.model('Order', orderSchema);
+//
+module.exports = Order;
