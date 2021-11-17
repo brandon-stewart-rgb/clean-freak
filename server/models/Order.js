@@ -14,7 +14,7 @@ const orderSchema = new Schema({
     type: String
   },
   //  Invalid value for schema path `username`, got value "undefined"
-   username: [userSchema]
+  //  username: [userSchema]
   // products: [productSchema]
 });
 

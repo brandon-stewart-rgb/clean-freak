@@ -1093,12 +1093,6 @@ html{
 	--tw-text-opacity: 1 !important;
 	--tw-shadow: 0 0 0 1px var(--border-color) !important;
 }
-[data-theme=lofi] *:where(.card){
-	border-color: var(--border-color) !important;
-	--tw-border-opacity: 1 !important;
-	--tw-text-opacity: 1 !important;
-	--tw-shadow: 0 0 0 1px var(--border-color) !important;
-}
 [data-theme=pastel]{
 	--p: 284 21.6% 80%;
 	--pf: 282 21.6% 70%;
@@ -1459,46 +1453,6 @@ html{
 .btn-group>input[type=radio].btn:before{
 	content: attr(data-title);
 }
-.card{
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-	border-radius: var(--rounded-box,1rem);
-}
-.card:focus{
-	outline: 2px solid transparent;
-	outline-offset: 2px;
-}
-.card figure,.card figure>*{
-	width: 100%;
-}
-.card.image-full{
-	display: grid;
-}
-.card.image-full:before{
-	position: relative;
-	content: "";
-	--tw-bg-opacity: 1;
-	background-color: hsla(var(--n)/var(--tw-bg-opacity,1));
-	opacity: .75;
-	z-index: 10;
-	border-radius: var(--rounded-box,1rem);
-}
-.card.image-full:before,.card.image-full>*{
-	grid-column-start: 1;
-	grid-row-start: 1;
-}
-.card.image-full>figure img{
-	height: 100%;
-	object-fit: cover;
-}
-.card.image-full>.card-body{
-	position: relative;
-	--tw-text-opacity: 1;
-	color: hsla(var(--nc)/var(--tw-text-opacity,1));
-	z-index: 20;
-}
 .checkbox:focus{
 	outline: 2px solid transparent;
 	outline-offset: 2px;
@@ -1767,22 +1721,6 @@ html{
 	to{
 		transform: scale(1);
 	}
-}
-.card:focus-visible{
-	box-shadow: 0 0 0 2px currentColor;
-}
-.card.bordered{
-	--tw-border-opacity: 1;
-	border-color: hsla(var(--b2)/var(--tw-border-opacity,1));
-	border-width: 1px;
-}
-.card.compact .card-body{
-	font-size: .875rem;
-	line-height: 1.25rem;
-	padding: 1rem;
-}
-.card.compact .card-title{
-	margin-bottom: .25rem;
 }
 .checkbox{
 	--chkbg: var(--bc);
