@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import Auth from '../utils/auth';
+import Auth from '../utils/auth';
 import Navbar from '@material-tailwind/react/Navbar';
 import NavbarContainer from '@material-tailwind/react/NavbarContainer';
 import NavbarWrapper from '@material-tailwind/react/NavbarWrapper';
@@ -16,10 +16,10 @@ import NavLink from '@material-tailwind/react/NavLink';
 
 export default function DefaultNavbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
-	// const logout = event => {
-	// 	event.preventDefault();
-	// 	Auth.logout();
-	// }
+	const logout = event => {
+		event.preventDefault();
+		Auth.logout();
+	}
 
 	return (
 		<Navbar color="transparent" navbar>
@@ -49,7 +49,7 @@ export default function DefaultNavbar() {
 										</Link>
 									</NavLink>
 							{/* comment this auth out to see all navbar and be able to work on other pages */}
-							{/* {Auth.loggedIn() ? ( */}
+							{Auth.loggedIn() ? (
 									<>
 									
 									<NavLink>
@@ -70,6 +70,27 @@ export default function DefaultNavbar() {
 											ripple="light"
 										>
 											dashboard
+										</Link>
+									</NavLink>
+									<NavLink>
+										<Link
+											to="/checkout"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											checkout
+										</Link>
+									</NavLink>
+									<NavLink>
+										<Link
+											to="/"
+											onClick={logout}
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											logout
 										</Link>
 									</NavLink>
 
@@ -126,7 +147,7 @@ export default function DefaultNavbar() {
 									</a> */}
 									</>
 									
-									{/* ) : */}
+							) :
 									<>
 									<NavLink>
 										<Link
@@ -148,18 +169,9 @@ export default function DefaultNavbar() {
 											register
 										</Link>
 									</NavLink>
-									<NavLink>
-										<Link
-											to="/checkout"
-											target="_self"
-											rel="noreferrer"
-											ripple="light"
-										>
-											checkout
-										</Link>
-									</NavLink>
+									
 								</>
-						{/* } */}
+						 } 
 
 						</div>
 					</Nav>			
