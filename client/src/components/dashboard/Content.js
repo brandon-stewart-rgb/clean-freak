@@ -6,8 +6,15 @@ import H4 from '@material-tailwind/react/Heading4';
 import DateDisplay from 'components/dashboard/DateDisplay';
 // import MultipleCal from 'components/services/MultipleCal'
 import '../../assets/styles/custom-styles.css'
+import { useQuery } from '@apollo/client';
+import { QUERY_ME } from 'utils/queries';
 
 export default function Content() {
+	const {loading, data: userData} = useQuery(QUERY_ME);
+	console.log(userData)
+	if(loading){
+		return <div>Loading...</div>
+	}
 	return (
 		<section className="relative py-16 bg-gray-100">
 			<div className="container max-w-7xl px-4 mx-auto">
@@ -25,7 +32,7 @@ export default function Content() {
 								<div className="flex justify-center py-4 lg:pt-4 pt-8">
 									<div className="mr-4 p-3 text-center">
 										<span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-											Welcome: Jane Doe User
+											Welcome: {userData.me.username}
 										</span>
 										<span className="text-sm font-light block uppercase tracking-wide text-gray-900">
 											4 star customer
@@ -36,7 +43,7 @@ export default function Content() {
 						</div>
 
 						<div className="text-center my-3">
-							<H4 color="gray">Your Scheduled Cleaning</H4>
+							<H4 color="gray">Your Cleaning Package</H4>
 						</div>
 
 						<section className="pb-10 pt-10 bg-gray-100 mt-10 mb-6">
@@ -47,6 +54,7 @@ export default function Content() {
 										icon="stars"
 										title="Bronze | Bi-monthly cleanings."
 									>
+										{/* need to grab orders here as well conditionally render their personal order */}
 										<h1 className="price-2">$30/month</h1>
 										<p className="text-l font-medium">
 											<span>Start Date One</span> 11/12/21 |
@@ -66,15 +74,20 @@ export default function Content() {
 									</DashCard>
 
 									<History>
-										<h1 className="price">Order History</h1>
+										<h1 className="price">Next Service Date</h1>
+
+										<ul className="history" style={{marginBottom: '50%'}}>
+											{/* need to grab order date from order query */}
+											<li>Bronze Package 11/30/21</li>
+										</ul>
+
+										<p className="text-l font-medium"></p>
+									
+										<h1 className="price">Last Service Date</h1>
 
 										<ul className="history">
-											<li>Bronze Package 4/12/17</li>
-											<li>Silver Package 1/13/20</li>
-											<li>Bronze Package 2/01/20</li>
-											<li>Gold Package 04/05/20</li>
-											<li>Silver Package 05/12/21</li>
-											<li>Bronze Package 10/12/21</li>
+											{/* need to grab order date from order query */}
+											<li>Bronze Package 11/15/21</li>
 										</ul>
 
 										<p className="text-l font-medium"></p>

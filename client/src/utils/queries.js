@@ -21,28 +21,11 @@ export const QUERY_USER = gql`
   }
 `;
 export const QUERY_ME = gql`
-  {
-    me {
+query me{
+  me{
       _id
       username
       email
-      friendCount
-      thoughts {
-        _id
-        thoughtText
-        createdAt
-        reactionCount
-        reactions {
-          _id
-          createdAt
-          reactionBody
-          username
-        }
-      }
-      friends {
-        _id
-        username
-      }
     }
   }
 `;

@@ -2131,9 +2131,6 @@ html{
 .-mt-64{
 	margin-top: -16rem;
 }
-.mb-5{
-	margin-bottom: 1.25rem;
-}
 .ml-3{
 	margin-left: 0.75rem;
 }
@@ -2169,6 +2166,9 @@ html{
 }
 .mt-5{
 	margin-top: 1.25rem;
+}
+.mb-5{
+	margin-bottom: 1.25rem;
 }
 .-mt-12{
 	margin-top: -3rem;
@@ -2221,14 +2221,14 @@ html{
 .h-screen{
 	height: 100vh;
 }
-.h-12{
-	height: 3rem;
-}
 .h-6{
 	height: 1.5rem;
 }
 .h-28{
 	height: 7rem;
+}
+.h-12{
+	height: 3rem;
 }
 .h-\[500px\]{
 	height: 500px;
@@ -2245,9 +2245,6 @@ html{
 .w-10{
 	width: 2.5rem;
 }
-.w-12{
-	width: 3rem;
-}
 .w-auto{
 	width: auto;
 }
@@ -2256,6 +2253,9 @@ html{
 }
 .w-52{
 	width: 13rem;
+}
+.w-12{
+	width: 3rem;
 }
 .w-16{
 	width: 4rem;

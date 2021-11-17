@@ -1,5 +1,5 @@
 const { Schema } = require('mongoose');
-
+const userSchema = require('./User')
 // const productSchema = require('./Product')
 
 const orderSchema = new Schema({
@@ -7,16 +7,14 @@ const orderSchema = new Schema({
     type: Date,
     default: Date.now
   },
-<<<<<<< HEAD
-=======
   price: {
-    type: Int
+    type: Number
   },
   name: {
     type: String
   },
-  username: [User]
->>>>>>> feature/resolve-seeds
+  //  Invalid value for schema path `username`, got value "undefined"
+   username: [userSchema]
   // products: [productSchema]
 });
 

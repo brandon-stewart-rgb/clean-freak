@@ -8,12 +8,12 @@ type Order {
   username: String
 }
 type User {
-  _id: ID!
-  username: String!
-  password: String!
-  email: String!
-  token: String!
-  createdAt: String!
+  _id: ID
+  username: String
+  password: String
+  email: String
+  token: String
+  createdAt: String
   orders: [Order]
 }
 type Auth{

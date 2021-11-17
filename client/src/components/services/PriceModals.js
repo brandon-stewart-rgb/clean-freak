@@ -3,8 +3,15 @@ import StatusCard from 'components/landing/StatusCard';
 import SingleCal from 'components/services/SingleCal'
 import MultipleCal from 'components/services/MultipleCal'
 import '../PriceModals.css'
+import { useQuery } from '@apollo/client';
+import {QUERY_ME} from '../../utils/queries';
 
 export default function PriceModals() {
+	const {loading, data: userData} = useQuery(QUERY_ME);
+	console.log(userData)
+	if(loading){
+		return <div>Loading...</div>
+	}
 	return (
 		<section className="pb-10 pt-10 bg-gray-100 mt-10 mb-6">
 			<div className="container max-w-7xl mx-auto px-4">
@@ -20,7 +27,7 @@ export default function PriceModals() {
 							
 						<div className="collapse-content ">  
 						<p className="text-l font-medium" >	
-						Hello: Username
+						Hello: {userData.me.username}
                         </p>  
                                 
     					<MultipleCal />
@@ -51,7 +58,7 @@ export default function PriceModals() {
 							
 						<div className="collapse-content ">  
 						<p className="text-l font-medium" >	
-						Hello: Username
+						Hello: {userData.me.username}
                         </p>  
                                 
     					<MultipleCal />
@@ -73,7 +80,7 @@ export default function PriceModals() {
 
 					<StatusCard color="yellow" icon="fingerprint" title="Gold">
 						Daily Cleanings.
-						<h1 className="price">$800/month</h1>
+						<h1 className="price">$80/month</h1>
 						
 
 						<div className="collapse bg-gray-100 rounded-box border-base-300   collapse-arrow">
@@ -83,8 +90,11 @@ export default function PriceModals() {
 						<div className="collapse-content "> 
 						  
 						<p className="text-l font-medium" >		
-						Select Start Dates
+						Select Start Dates 
                         </p>  
+						<p className="text-l font-medium">
+							{userData.me.username}
+						</p>
                                 
     					<SingleCal />
                                 
