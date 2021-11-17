@@ -7,8 +7,6 @@ const orderSchema = new Schema({
     type: Date,
     default: Date.now
   },
-<<<<<<< HEAD
-=======
   price: {
     type: Int
   },
@@ -16,7 +14,6 @@ const orderSchema = new Schema({
     type: String
   },
   username: [User]
->>>>>>> feature/resolve-seeds
   // products: [productSchema]
 });
 
