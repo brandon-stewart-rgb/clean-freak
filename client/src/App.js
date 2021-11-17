@@ -15,6 +15,7 @@ import Login from 'pages/Login';
 import Register from 'pages/Register';
 import Dashboard from 'pages/Dashboard';
 import Services from 'pages/Services';
+import Checkout from 'pages/Checkout';
 import "@material-tailwind/react/tailwind.css";
 
 // Font Awesome Style Sheet
@@ -53,6 +54,7 @@ function App() {
             <Route exact path="/register" component={Register} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/services" component={Services} />
+            <Route exact path="/checkout" component={Checkout} />
             <Redirect from="*" to="/" />
         </Switch>
         </Router>

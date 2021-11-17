@@ -35,8 +35,9 @@ export default function DefaultNavbar() {
 				</NavbarWrapper>
 
 				<NavbarCollapse open={openNavbar}>
-					<div className="flex flex-col z-50 lg:flex-row lg:items-center">
+					
 						<Nav>
+						<div className="flex flex-col z-50 lg:flex-row lg:items-center">
 							<NavLink>
 										<Link
 											to="/"
@@ -147,10 +148,21 @@ export default function DefaultNavbar() {
 											register
 										</Link>
 									</NavLink>
+									<NavLink>
+										<Link
+											to="/checkout"
+											target="_self"
+											rel="noreferrer"
+											ripple="light"
+										>
+											checkout
+										</Link>
+									</NavLink>
 								</>
 						{/* } */}
-								</Nav>
-					</div>
+
+						</div>
+					</Nav>			
 				</NavbarCollapse>
 			</NavbarContainer>
 		</Navbar>
