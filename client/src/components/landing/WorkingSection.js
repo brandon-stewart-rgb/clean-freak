@@ -15,7 +15,7 @@ export default function WorkingSection() {
             <div className="container max-w-7xl mx-auto px-4">
                 <div className="flex flex-wrap relative z-50">
                     <StatusCard color="brown" icon="stars" title="Bronze">
-                        This is our most basic package. Bi-monthly cleanings. 
+                        This is our most basic package. Bi-monthly cleanings. Have your home cleaned well! Enjoy More time for you. 
 
                         <h1 className='price'>$30/month</h1>
                     </StatusCard>
@@ -24,7 +24,7 @@ export default function WorkingSection() {
                         icon="autorenew"
                         title="Silver"
                     >
-                        Bi-Weekly cleanings! This is great for...
+                        Bi-Weekly cleanings! Keep your home sparkling clean all the time. Let us do the hard work!
                         <h1 className = 'price'> $60/month </h1>
                     </StatusCard>
                     <StatusCard
@@ -45,15 +45,12 @@ export default function WorkingSection() {
                         </div>
                         <H4 color="gray">Working with us is a pleasure</H4>
                         <LeadText color="blueGray">
-                            Don't let your uses guess by attaching tooltips and
-                            popoves to any element. Just make sure you enable
-                            them first via JavaScript.
+                            “Cleaning and organizing is a practice, not a project.”
+                            — Meagan Francis
                         </LeadText>
                         <LeadText color="blueGray">
-                            The kit comes with three pre-built pages to help you
-                            get started faster. You can change the text and
-                            images and you're good to go. Just make sure you
-                            enable them first via JavaScript.
+                            “For every minute spent on organizing, an hour is earned.”
+                            — Benjamin Franklin
                         </LeadText>
                         <a
                             href="#pablo"
@@ -69,10 +66,11 @@ export default function WorkingSection() {
                             <CardBody>
                                 <H6 color="gray">Top Notch Services</H6>
                                 <Paragraph color="blueGray">
-                                    The Arctic Ocean freezes every winter and
-                                    much of the sea-ice then thaws every summer,
-                                    and that process will continue whatever
-                                    happens.
+                                    “When your environment is clean you feel happy motivated and healthy.”
+                                    — Lailah Gifty Akita
+
+                                    “When all else fails, cleaning house is the perfect antidote to most of life’s ills.”
+                                    — Sue Grafton
                                 </Paragraph>
                             </CardBody>
                         </Card>
