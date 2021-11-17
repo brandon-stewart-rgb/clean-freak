@@ -7,6 +7,16 @@ const orderSchema = new Schema({
     type: Date,
     default: Date.now
   },
+<<<<<<< HEAD
+=======
+  price: {
+    type: Int
+  },
+  name: {
+    type: String
+  },
+  username: [User]
+>>>>>>> feature/resolve-seeds
   // products: [productSchema]
 });
 

@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Order }  = require('../../models');
+const { Order } = require('../../models');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
 //////ALL STRIPE DATA//////
 //const express = require("express")
 //const app = express()
@@ -18,3 +19,30 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 //module.exports = resolvers;
 
+const resolvers = {
+    Query: {
+        Order: async (parent, { username }) => {
+            const params = username ? { username } : {};
+            return Thought.find(params).sort({ createdAt: -1 });
+        },
+    },
+    Mutation: {
+        addOrder: async (parent, args, context) => {
+            if (context.user) {
+                const order = await Order.create({ ...args, username: context.user.username });
+
+                await User.findByIdAndUpdate(
+                    { _id: context.user._id },
+                    { $push: { Order: order._id } },
+                    { new: true }
+                );
+
+                return order;
+            }
+            throw new AuthenticationError('You need to be logged in!');
+        }
+
+    }
+
+}
+module.exports = resolvers
