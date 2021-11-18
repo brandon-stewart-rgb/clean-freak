@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 const { Schema } = require('mongoose');
 const userSchema = require('./User')
 // const productSchema = require('./Product')
+=======
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+const userSchema = require('./User');
+
+>>>>>>> feature/new-order
 
 const orderSchema = new Schema({
   purchaseDate: {
@@ -13,11 +21,10 @@ const orderSchema = new Schema({
   name: {
     type: String
   },
-  //  Invalid value for schema path `username`, got value "undefined"
-   username: [userSchema]
+  username: [userSchema]
   // products: [productSchema]
 });
 
-
-
-module.exports = orderSchema;
+const Order = mongoose.model('Order', orderSchema);
+//
+module.exports = Order;
