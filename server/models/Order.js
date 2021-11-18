@@ -10,7 +10,7 @@ const orderSchema = new Schema({
     default: Date.now
   },
   price: {
-    type: Int
+    type: Number
   },
   name: {
     type: String

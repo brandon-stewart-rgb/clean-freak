@@ -3,9 +3,10 @@ module.exports = gql`
 
 type Order {
   _id: ID!
-  body: String!
+  name: String! 
   createdAt: String!
-  username: String
+  username: String!
+  price: Number!
 }
 type User {
   _id: ID!
@@ -27,5 +28,6 @@ type Query {
 type Mutation {
   login(email: String!, password: String!): Auth
   addUser(username: String!, email: String!, password: String!): Auth
+  addOrder(name: String!, createdAt: String!, username: String!, price: Number!): Auth
 }
 `
