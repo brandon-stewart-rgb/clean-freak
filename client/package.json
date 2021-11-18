@@ -6,6 +6,7 @@
     "node": "14.17.4"
   },
   "proxy": "http://localhost:3001/",
+  "homepage": "https://clean-freak.herokuapp.com/",
   "dependencies": {
     "@apollo/client": "^3.3.7",
     "@emotion/react": "^11.5.0",
