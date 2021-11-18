@@ -9,11 +9,13 @@
     "npm": "6.x"
   },
   "scripts": {
+    "prestart": "npm run build",
     "start": "node server/server.js",
+    "build": "cd client && react-scripts build",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "seed": "cd server && npm run seed"
+    
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,9 @@
     "graphql": "^15.7.2",
     "jsonwebtoken": "^8.5.1",
     "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "postcss-import": "^14.0.0",
+"postcss": "^8.2.4"
+
   }
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import Title from 'components/landing/Title';
 import ContactCard from 'components/landing/ContactCard';
 import Form from 'components/landing/Form';

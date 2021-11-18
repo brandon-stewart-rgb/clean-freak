@@ -4,6 +4,7 @@
 // import Icon from '@material-tailwind/react/Icon';
 // import LeadText from '@material-tailwind/react/LeadText';
 // import ProfilePicture from 'assets/img/team-2-800x800.jpg';
+import React from 'react';
 import PriceModals from './PriceModals';
 
 

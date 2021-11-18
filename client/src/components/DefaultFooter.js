@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import H5 from '@material-tailwind/react/Heading5';
 import LeadText from '@material-tailwind/react/LeadText';

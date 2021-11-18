@@ -6,7 +6,6 @@
     "node": "14.17.4"
   },
   "proxy": "http://localhost:3001/",
-  "homepage": "https://demos.creative-tim.com/material-tailwind-kit-react/#/",
   "dependencies": {
     "@apollo/client": "^3.3.7",
     "@emotion/react": "^11.5.0",
@@ -28,8 +27,8 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2",
     "autoprefixer": "^9.8.6",
-"postcss-cli": "^7.1.2",
-"tailwindcss": "^1.8.9"
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.9"   
   },
   "scripts": {
     "build:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css --env production",

@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from '@material-tailwind/react/Card';
 import CardBody from '@material-tailwind/react/CardBody';
 import H6 from '@material-tailwind/react/Heading6';

@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from '@material-tailwind/react/Image';
 import H6 from '@material-tailwind/react/Heading6';
 import Paragraph from '@material-tailwind/react/Paragraph';

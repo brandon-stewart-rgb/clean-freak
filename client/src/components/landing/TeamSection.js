@@ -1,3 +1,4 @@
+import React from 'react';
 import Title from 'components/landing/Title';
 import TeamCard from 'components/landing/TeamCard';
 import Image1 from 'assets/img/BBB.jpg';
