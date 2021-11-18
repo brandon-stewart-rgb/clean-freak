@@ -2,7 +2,7 @@ import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/dashboard/Header';
 import H4 from '@material-tailwind/react/Heading4';
-import Icon from '@material-tailwind/react/Icon';
+// import Icon from '@material-tailwind/react/Icon';
 
 
 
@@ -168,6 +168,7 @@ export default function Checkout(icon) {
 																</div>
 																<div className="flex justify-center items-center flex-col">
 																	<img
+																	alt="test"
 																		src="https://img.icons8.com/color/96/000000/mastercard-logo.png"
 																		width="40"
 																		className="relative right-5"
