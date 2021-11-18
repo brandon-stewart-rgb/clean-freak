@@ -12,9 +12,14 @@
   <h1 align="center">Clean Freak</h1>
 
   <p align="center">
-    Clean Freak, an app built using Node.js, Sequelize, MySQL and Express. <br> Project required modules for Sequelize, routes via Express, MySQL Shell to start schemas and seeds for the MySQL database.
+    Clean Freak, an app built using React.js <br> Our goal is to create an app with several contributors in mind- Performant JavaScript,
+NoSQL databases,
+React single-page applications,
+GraphQL APIs,
+Concurrent servers in a MERN app,
+Authentication
     <br />
-    <a href="https://github.com/tyler1836/workout-tracker"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brandon-stewart-rgb/clean-freak/edit/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     
@@ -56,9 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Screenshot coming soon
-
-<!-- ![Screenshot ](public/assets/img/screenshot.png) -->
+Screenshot coming soon...
 
 Deployed: 
 
@@ -67,14 +70,11 @@ https://clean-freak.herokuapp.com/
 
 ### Built With
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
+* [React.j](https://nodejs.dev/)
+* [MongoDB](https://sequelize.org/)
 * [Express](https://expressjs.com/)
-* [dotenv](https://www.npmjs.com/package/dotenv)
+* [SPA](https://www.npmjs.com/package/dotenv)
 * [npm](https://www.npmjs.com/)
-* [bcrypt](https://www.npmjs.com/package/bcrypt)
-* [Connect Session Store using Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-
 
 
 <!-- GETTING STARTED -->
@@ -93,7 +93,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tyler1836/workout-tracker
+   git clone the clean freak repo files 
    ```
 2. Install NPM packages
    ```sh
@@ -159,13 +159,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Tyler Role - 
 
-Project Link: [https://github.com/tyler1836/workout-tracker](https://github.com/brandon-stewart-rgb/paint-headlights)
+Project Link: [https://github.com/brandon-stewart-rgb/clean-freak](https://github.com/brandon-stewart-rgb/clean-freak)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
-* [Express](https://expressjs.com/)
+* [React.js](https://nodejs.dev/)
+* [MongoDB](https://sequelize.org/)
