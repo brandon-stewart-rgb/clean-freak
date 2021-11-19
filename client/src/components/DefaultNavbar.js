@@ -12,7 +12,7 @@ import NavLink from '@material-tailwind/react/NavLink';
 // import Dropdown from '@material-tailwind/react/Dropdown';
 // import DropdownItem from '@material-tailwind/react/DropdownItem';
 // import Icon from '@material-tailwind/react/Icon';
-// import Button from '@material-tailwind/react/Button';
+import Button from '@material-tailwind/react/Button';
 
 export default function DefaultNavbar() {
 	const [openNavbar, setOpenNavbar] = useState(false);
@@ -90,7 +90,13 @@ export default function DefaultNavbar() {
 											rel="noreferrer"
 											ripple="light"
 										>
+											<Button
+											color="transparent"
+											className="bg-white text-black ml-4"
+											ripple="dark"
+										>
 											logout
+											</Button>
 										</Link>
 									</NavLink>
 
