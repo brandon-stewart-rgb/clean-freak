@@ -4,30 +4,37 @@ module.exports = gql`
 type Order {
   _id: ID!
   name: String! 
-  createdAt: String!
-  username: String!
-  price: Number!
+  purchaseDate: String!
+  price: Int!
 }
+
 type User {
-  _id: ID
-  username: String
-  password: String
-  email: String
-  token: String
-  createdAt: String
+  _id: ID!
+  username: String!
+  password: String!
+  email: String!
   orders: [Order]
 }
+
+input OrderInput{
+  _id: ID!
+  name: String! 
+  purchaseDate: String!
+  price: Int!
+}
+
 type Auth{
   token: ID!
-  user: User!
+  user: User
 }
+
 type Query {
   me: User
-
 }
+
 type Mutation {
   login(email: String!, password: String!): Auth
   addUser(username: String!, email: String!, password: String!): Auth
-  addOrder(name: String!, createdAt: String!, username: String!, price: Number!): Auth
+  addOrder(orderData:OrderInput!): User
 }
 `
