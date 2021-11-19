@@ -33,12 +33,10 @@ export default function Content() {
 							<div className="w-full lg:w-4/12 px-4 lg:order-1">
 								<div className="flex justify-center py-4 lg:pt-4 pt-8">
 									<div className="mr-4 p-3 text-center">
-										<span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-											Welcome: {userData.me.username}
+										<span className="text-xl  block  tracking-wide text-gray-500">
+											Welcome: <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">{userData.me.username}</span>
 										</span>
-										<span className="text-sm font-light block uppercase tracking-wide text-gray-900">
-											4 star customer
-										</span>
+										
 									</div>
 								</div>
 							</div>

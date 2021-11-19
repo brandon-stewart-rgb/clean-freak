@@ -11,10 +11,7 @@ export default function Header() {
                         <H2 color="white">A clean house starts with us.</H2>
                         <div className="text-gray-200">
                             <LeadText color="gray-200">
-                                This is a simple example of a Landing Page you
-                                can build using Material Tailwind. It features
-                                multiple components based on the Tailwind CSS
-                                and Material Design by Google.
+                              The cleanliness of your home depends on lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum neque sed dui malesuada euismod. Aenean aliqentum felis vitae elementum.
                             </LeadText>
                         </div>
                     </div>

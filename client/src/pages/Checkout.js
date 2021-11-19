@@ -26,7 +26,7 @@ export default function Checkout( ) {
 									<H4 color="gray">Checkout</H4>
 								</div>
 
-								<div className="h-screen bg-gray-300">
+								<div className="h-screen mb-6 bg-gray-200">
 									<div className="py-12">
 										<div className="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl">
 											<div className="md:flex ">
