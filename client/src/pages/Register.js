@@ -8,7 +8,7 @@ import CardBody from '@material-tailwind/react/CardBody';
 import CardFooter from '@material-tailwind/react/CardFooter';
 import H5 from '@material-tailwind/react/Heading5';
 import InputIcon from '@material-tailwind/react/InputIcon';
-// import Button from '@material-tailwind/react/Button';
+import Button from '@material-tailwind/react/Button';
 import DefaultNavbar from 'components/DefaultNavbar';
 // import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
@@ -132,16 +132,17 @@ const Register = () => {
                     </CardBody>
                     <CardFooter>
                         <div className="flex justify-center">
-                            <button
+                            <Button
+                                className='btn d-block w-100'
                                 type='submit'
-                                color="lightBlue"
+               
                                 buttonType="link"
                                 size="lg"
                                 ripple="dark"
                             >
                                 Register
-                            </button>
-                            {error && <div>Sign up failed</div>}
+                            </Button>
+                            {error && <div className="mb-4 px-4 text-gray-500">Sign up failed</div>}
                         </div>
                     </CardFooter>
                     </form> 

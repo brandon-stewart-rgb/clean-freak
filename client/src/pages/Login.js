@@ -100,6 +100,7 @@ const Login = (props) => {
                     <CardFooter>
                         <div className="flex justify-center bg-bb">
                             <Button
+                            className='btn d-block w-100'
                                 color="lightBlue"
                                 buttonType='link'
                                 type='submit'
@@ -109,7 +110,7 @@ const Login = (props) => {
                             >
                                 Login
                             </Button>
-                            {error && <div>Login failed</div>}
+                            {error && <div className="mb-4 px-4 text-gray-500">Login failed</div>}
                         </div>
                     </CardFooter>
                     </form>

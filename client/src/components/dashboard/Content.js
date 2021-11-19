@@ -1,3 +1,4 @@
+import React from 'react';
 import Button from '@material-tailwind/react/Button';
 import DashCard from 'components/dashboard/DashCard';
 import History from 'components/dashboard/History';
@@ -8,6 +9,7 @@ import DateDisplay from 'components/dashboard/DateDisplay';
 import '../../assets/styles/custom-styles.css'
 import { useQuery } from '@apollo/client';
 import { QUERY_ME } from 'utils/queries';
+
 
 export default function Content() {
 	const {loading, data: userData} = useQuery(QUERY_ME);
