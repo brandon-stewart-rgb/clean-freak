@@ -7,9 +7,9 @@ import Image4 from 'assets/img/GG.jpg';
 
 export default function TeamSection() {
     return (
-        <section className="pt-20 pb-48">
+        <section className="pt-20 pb-48 bg-white">
             <div className="container max-w-7xl mx-auto px-4">
-                <Title heading="We pair you with great local companies and idividuals to fit your needs">
+                <Title heading="We pair you with great local companies and individuals to fit your needs">
                 Radiation suit, of course, cause all of the fall out from the atomic wars.  This is truly amazing, a portable television studio.
                 </Title>
                 <div className="flex flex-wrap">
