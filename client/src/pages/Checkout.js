@@ -1,13 +1,11 @@
+import { Link } from 'react-router-dom';
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/dashboard/Header';
 import H4 from '@material-tailwind/react/Heading4';
-import Icon from '@material-tailwind/react/Icon';
 
 
-
-
-export default function Checkout(icon) {
+export default function Checkout( ) {
 	return (
 		<>
 			<div className="absolute w-full z-20">
@@ -39,37 +37,28 @@ export default function Checkout(icon) {
 																Shopping Cart
 															</h1>
 
+
+
+
 															<div className="flex justify-between items-center pt-6 mt-6 border-t">
 																<div className="flex items-center">
-																	<img
-																		alt="test"
-																		src="https://i.imgur.com/Uv2Yqzo.jpg"
-																		width="60"
-																		className="rounded-full "
-																	/>
+																	
+																	  <div class="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-md rounded-full bg-brown-500"><span class="material-icons text-white text-xl leading-none">stars</span></div>
 
                                       									<div className="flex flex-col ml-3 ">
 																		<span className="text-md font-medium w-auto text-black">
 																			Bronze Package
 																		</span>
-																		<span className="text-xs font-light text-gray-100">
-																			Lorem Ipsum Dolor Amet
+																		<span className="text-s font-light text-gray-400">
+																			Selected dates: <strong>01/30/22</strong> | <strong>0/2/22/22</strong>
 																		</span>
 																	</div>
 																</div>
 																<div className="flex justify-center items-center">
-																	<div className="pr-8 flex">
-																		<span className="font-semibold">-</span>
-																		<input
-																			type="text"
-																			className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-																			value="1"
-																		/>
-																		<span className="font-semibold">+</span>
-																	</div>
+																	
 																	<div className="pr-8">
-																		<span className="text-xs font-medium">
-																			$10.50
+																		<span className="text-s font-medium text-gray-500 ">
+																			$30.00
 																		</span>
 																	</div>
 																	<div>
@@ -77,36 +66,30 @@ export default function Checkout(icon) {
 																	</div>
 																</div>
 															</div>
-															<div className="flex justify-between items-center mt-6 pt-6 border-t">
+
+
+
+
+
+
+															<div className="flex justify-between items-center pt-6 mt-6 border-t">
 																<div className="flex items-center">
-																	<img
-																		alt="test"
-																		src="https://i.imgur.com/xbTAITF.jpg"
-																		width="60"
-																		className="rounded-full "
-																	/>
-																	<div className="flex flex-col ml-3 ">
-																		<span className="text-md font-medium">
-																			Breakfast
+																	
+																<div class="p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-md rounded-full bg-yellow-600"><span class="material-icons text-white text-xl leading-none">fingerprint</span></div>
+                                      									<div className="flex flex-col ml-3 ">
+																		<span className="text-md font-medium w-auto text-black">
+																			Gold Package
 																		</span>
-																		<span className="text-xs font-light text-gray-400">
-																			#86577
+																		<span className="text-s font-light text-gray-400">
+																			Selected dates: <strong>01/30/22</strong> | <strong>0/2/22/22</strong>
 																		</span>
 																	</div>
 																</div>
 																<div className="flex justify-center items-center">
-																	<div className="pr-8 flex">
-																		<span className="font-semibold">-</span>
-																		<input
-																			type="text"
-																			className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-																			value="1"
-																		/>
-																		<span className="font-semibold">+</span>
-																	</div>
+																	
 																	<div className="pr-8">
-																		<span className="text-xs font-medium">
-																			$10.50
+																		<span className="text-s font-medium text-gray-500 ">
+																			$60.00
 																		</span>
 																	</div>
 																	<div>
@@ -114,11 +97,18 @@ export default function Checkout(icon) {
 																	</div>
 																</div>
 															</div>
+
+
+
+
+
+
+															
 															<div className="flex justify-between items-center mt-6 pt-6 border-t">
 																<div className="flex items-center">
 																	<i className="fa fa-arrow-left text-sm pr-2"></i>
 																	<span className="text-md font-medium text-blue-500">
-																		Continue Shopping
+																	<Link to='/services'>	Continue Shopping</Link>
 																	</span>
 																</div>
 																<div className="flex justify-center items-end">
@@ -126,7 +116,7 @@ export default function Checkout(icon) {
 																		Subtotal:
 																	</span>
 																	<span className="text-lg font-bold text-gray-800 ">
-																		$24.90
+																		$90.00
 																	</span>
 																</div>
 															</div>
@@ -168,6 +158,7 @@ export default function Checkout(icon) {
 																</div>
 																<div className="flex justify-center items-center flex-col">
 																	<img
+																	alt='ms logo'
 																		src="https://img.icons8.com/color/96/000000/mastercard-logo.png"
 																		width="40"
 																		className="relative right-5"
