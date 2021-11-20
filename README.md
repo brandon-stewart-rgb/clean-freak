@@ -12,9 +12,9 @@
   <h1 align="center">Clean Freak</h1>
 
   <p align="center">
-    Clean Freak, an app built using Node.js, MondoDB, and Express. <br> Project required modules for Sequelize, routes via Express, MySQL Shell to start schemas and seeds for the MySQL database.
+    Clean Freak, an app built using React.js, GraphQL,  Node.js, MondoDB, Express, queries and mutations, Heroku, Tailwind, authentication. <br> This project is responsive, interactive and polished.
     <br />
-    <a href="https://github.com/tyler1836/workout-tracker"><strong>Explore the docs »</strong></a>
+    <a href="https://clean-freak.herokuapp.com/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     
@@ -66,14 +66,15 @@ https://clean-freak.herokuapp.com/
 
 ### Built With
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
+* [React](https://nodejs.dev/)
+* [GraphQL](https://sequelize.org/)
 * [Express](https://expressjs.com/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [npm](https://www.npmjs.com/)
-* [bcrypt](https://www.npmjs.com/package/bcrypt)
-* [Connect Session Store using Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-
+* [MongoDB](https://www.npmjs.com/package/bcrypt)
+* [Tailwind](https://www.npmjs.com/package/connect-session-sequelize)
+* [Heroku](https://nodejs.dev/)
+* [Stripe](https://nodejs.dev/)
 
 
 <!-- GETTING STARTED -->
