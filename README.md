@@ -68,15 +68,16 @@ https://github.com/brandon-stewart-rgb/clean-freak
 
 ### Built With
 
-* [React](https://nodejs.dev/)
-* [GraphQL](https://sequelize.org/)
+* [React](https://reactjs.org/)
+* [GraphQL](https://www.apollographql.com/docs/react/get-started/)
 * [Express](https://expressjs.com/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [npm](https://www.npmjs.com/)
-* [MongoDB](https://www.npmjs.com/package/bcrypt)
-* [Tailwind](https://www.npmjs.com/package/connect-session-sequelize)
-* [Heroku](https://nodejs.dev/)
-* [Stripe](https://nodejs.dev/)
+* [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_content=rlsavisitor&utm_source=google&utm_campaign=gs_americas_uscan_search_core_brand_atlas_desktop_rlsa&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14291004479&adgroup=128837427347&gclid=CjwKCAiA1uKMBhAGEiwAxzvX9-jIwn5UHOQ3WtMdFDoC2ZomiJGLdRYIyqeSVd2Mq1vaTbtNLYtdYBoCAvcQAvD_BwE)
+* [Tailwind](https://tailwindcss.com/)
+* [Heroku](https://www.heroku.com//)
+* [Stripe](https://stripe.com/?utm_campaign=paid_brand-US_Search_Brand_Stripe-1803852691&utm_medium=cpc&utm_source=google&ad_content=448938759828&utm_term=kwd-94834400&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAiA1uKMBhAGEiwAxzvX9yIwjcYv8Mop8H4s0YuQxwiujwtgi02ZMzQiz5gQhZ4Jv0cHHEr9ehoCshoQAvD_BwE/)
+* [Node.js](https://nodejs.dev/)
 
 
 <!-- GETTING STARTED -->
