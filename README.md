@@ -14,7 +14,7 @@
   <p align="center">
     Clean Freak, an app built using React.js, GraphQL,  Node.js, MondoDB, Express, queries and mutations, Heroku, Tailwind, authentication. <br> This project is responsive, interactive and polished.
     <br />
-    <a href="https://clean-freak.herokuapp.com/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brandon-stewart-rgb/clean-freak"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     
@@ -62,6 +62,8 @@
 Deployed: 
 
 https://clean-freak.herokuapp.com/
+
+https://github.com/brandon-stewart-rgb/clean-freak
 
 
 ### Built With
@@ -127,8 +129,8 @@ SOFTWARE.
 
 ## Contributors
 
-<a href="https://github.com/tyler1836/workout-tracker/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tyler1836/workout-tracker" />
+<a href="https://github.com/brandon-stewart-rgb/clean-freak/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=brandon-stewart-rgb/clean-freak" />
 </a>
 
 
