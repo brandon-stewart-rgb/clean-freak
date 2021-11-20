@@ -95,7 +95,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tyler1836/workout-tracker
+   git clone  https://github.com/brandon-stewart-rgb/clean-freak 
    ```
 2. Install NPM packages
    ```sh
@@ -159,15 +159,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Tyler Role - 
+Brandon Stewart - 
 
-Project Link: [https://github.com/tyler1836/workout-tracker](https://github.com/brandon-stewart-rgb/paint-headlights)
+Project Link: [https://github.com/brandon-stewart-rgb/clean-freak](https://github.com/brandon-stewart-rgb/clean-freak)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Node.js](https://nodejs.dev/)
-* [Sequelize ORM](https://sequelize.org/)
-* [Express](https://expressjs.com/)
+Thank you to our proffessor, T.A.s, tutors, and classmates. This was a great experience creating a project using everything we have learned.
