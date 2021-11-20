@@ -12,7 +12,7 @@
   <h1 align="center">Clean Freak</h1>
 
   <p align="center">
-    Clean Freak, an app built using Node.js, Sequelize, MySQL and Express. <br> Project required modules for Sequelize, routes via Express, MySQL Shell to start schemas and seeds for the MySQL database.
+    Clean Freak, an app built using Node.js, MondoDB, and Express. <br> Project required modules for Sequelize, routes via Express, MySQL Shell to start schemas and seeds for the MySQL database.
     <br />
     <a href="https://github.com/tyler1836/workout-tracker"><strong>Explore the docs »</strong></a>
     <br />
@@ -56,9 +56,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Screenshot coming soon
+![screenshot-clean-freak herokuapp com-2021 11 20-16_29_38](https://user-images.githubusercontent.com/85209802/142743978-ab3cbf90-76cb-49e0-ba96-86c4c5f3d16a.png)
 
-<!-- ![Screenshot ](public/assets/img/screenshot.png) -->
 
 Deployed: 
 
