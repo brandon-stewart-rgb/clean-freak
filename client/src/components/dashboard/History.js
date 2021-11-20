@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '@material-tailwind/react/Card';
 import CardBody from '@material-tailwind/react/CardBody';
+<<<<<<< HEAD
 // import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 import Paragraph from '@material-tailwind/react/Paragraph';
@@ -26,6 +27,13 @@ import Paragraph from '@material-tailwind/react/Paragraph';
 //     pink: 'bg-pink-500',
 //     red: 'bg-red-500',
 // };
+=======
+
+import H6 from '@material-tailwind/react/Heading6';
+import Paragraph from '@material-tailwind/react/Paragraph';
+
+
+>>>>>>> develop
 
 export default function DashCard({  title, children }) {
     return (
