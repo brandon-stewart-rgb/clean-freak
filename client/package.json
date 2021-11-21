@@ -6,6 +6,7 @@
     "node": "14.17.4"
   },
   "proxy": "http://localhost:3001/",
+  "homepage": "https://clean-freak.herokuapp.com/",
   "dependencies": {
     "@apollo/client": "^3.3.7",
     "@emotion/react": "^11.5.0",
@@ -31,12 +32,14 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    
     "start:react": "react-scripts start",
     "start": "npm-run-all -p watch:tailwind start:react",
     "build": "npm run build:tailwind && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "npm:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "npm:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "yarn:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn start"
   },
   "eslintConfig": {
     "extends": [
