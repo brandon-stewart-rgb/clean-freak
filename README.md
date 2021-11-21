@@ -173,4 +173,4 @@ Project Link: [https://github.com/brandon-stewart-rgb/clean-freak](https://githu
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-Thank you to our proffessor, T.A.s, tutors, and classmates. This was a great experience creating a project using everything we have learned.
+Thank you to our professor, T.A.s, tutors, and classmates. This was a great experience creating a project using everything we have learned.
