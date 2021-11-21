@@ -56,12 +56,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<<<<<<< HEAD
-Screenshot coming soon...
-=======
 ![screenshot-clean-freak herokuapp com-2021 11 20-16_29_38](https://user-images.githubusercontent.com/85209802/142743978-ab3cbf90-76cb-49e0-ba96-86c4c5f3d16a.png)
 
->>>>>>> develop
 
 Deployed: 
 
@@ -72,24 +68,16 @@ https://github.com/brandon-stewart-rgb/clean-freak
 
 ### Built With
 
-<<<<<<< HEAD
-* [React.j](https://nodejs.dev/)
-* [MongoDB](https://sequelize.org/)
-=======
 * [React](https://reactjs.org/)
 * [GraphQL](https://www.apollographql.com/docs/react/get-started/)
->>>>>>> develop
 * [Express](https://expressjs.com/)
 * [SPA](https://www.npmjs.com/package/dotenv)
 * [npm](https://www.npmjs.com/)
-<<<<<<< HEAD
-=======
 * [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_content=rlsavisitor&utm_source=google&utm_campaign=gs_americas_uscan_search_core_brand_atlas_desktop_rlsa&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14291004479&adgroup=128837427347&gclid=CjwKCAiA1uKMBhAGEiwAxzvX9-jIwn5UHOQ3WtMdFDoC2ZomiJGLdRYIyqeSVd2Mq1vaTbtNLYtdYBoCAvcQAvD_BwE)
 * [Tailwind](https://tailwindcss.com/)
 * [Heroku](https://www.heroku.com//)
 * [Stripe](https://stripe.com/?utm_campaign=paid_brand-US_Search_Brand_Stripe-1803852691&utm_medium=cpc&utm_source=google&ad_content=448938759828&utm_term=kwd-94834400&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAiA1uKMBhAGEiwAxzvX9yIwjcYv8Mop8H4s0YuQxwiujwtgi02ZMzQiz5gQhZ4Jv0cHHEr9ehoCshoQAvD_BwE/)
 * [Node.js](https://nodejs.dev/)
->>>>>>> develop
 
 
 <!-- GETTING STARTED -->
@@ -108,11 +96,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-<<<<<<< HEAD
-   git clone the clean freak repo files 
-=======
    git clone  https://github.com/brandon-stewart-rgb/clean-freak 
->>>>>>> develop
    ```
 2. Install NPM packages
    ```sh
@@ -179,22 +163,14 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Brandon Stewart - 
 
 Project Link: [https://github.com/brandon-stewart-rgb/clean-freak](https://github.com/brandon-stewart-rgb/clean-freak)
-<<<<<<< HEAD
-=======
 
 
 ![screenshot-clean-freak herokuapp com-2021 11 20-16_28_39](https://user-images.githubusercontent.com/85209802/142744333-270476e0-17fc-49f8-b3f9-9cf84e604871.png)
 ![screenshot-clean-freak herokuapp com-2021 11 20-16_27_36](https://user-images.githubusercontent.com/85209802/142744337-688eaaa3-1714-431c-babd-3de7b39a7461.png)
->>>>>>> develop
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-<<<<<<< HEAD
-* [React.js](https://nodejs.dev/)
-* [MongoDB](https://sequelize.org/)
-=======
 Thank you to our proffessor, T.A.s, tutors, and classmates. This was a great experience creating a project using everything we have learned.
->>>>>>> develop
